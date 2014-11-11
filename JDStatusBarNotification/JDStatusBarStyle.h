@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <UIKit/UIKit.h>
+
 extern NSString *const JDStatusBarStyleError;   /// This style has a red background with a white Helvetica label.
 extern NSString *const JDStatusBarStyleWarning; /// This style has a yellow background with a gray Helvetica label.
 extern NSString *const JDStatusBarStyleSuccess; /// This style has a green background with a white Helvetica label.
@@ -46,6 +48,9 @@ typedef NS_ENUM(NSInteger, JDStatusBarProgressBarPosition) {
 
 /// The font of the notification label
 @property (nonatomic, strong) UIFont *font;
+
+/// Allows to fade in the status text
+@property (nonatomic, unsafe_unretained) BOOL fadeInStatus;
 
 /// A correction of the vertical label position in points. Default is 0.0
 @property (nonatomic, assign) CGFloat textVerticalPositionAdjustment;

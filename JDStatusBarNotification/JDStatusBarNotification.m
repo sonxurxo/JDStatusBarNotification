@@ -217,6 +217,10 @@
     textLabel.font = style.font;
     textLabel.accessibilityLabel = status;
     textLabel.text = status;
+    textLabel.alpha = 0;
+    [UIView animateWithDuration:style.fadeInStatus ? .5 : .0 animations:^{
+        textLabel.alpha = 1;
+    }];
     
     if (style.textShadow) {
         textLabel.shadowColor = style.textShadow.shadowColor;
