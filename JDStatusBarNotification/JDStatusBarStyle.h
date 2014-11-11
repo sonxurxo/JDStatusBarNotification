@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <UIKit/UIKit.h>
-
 extern NSString *const JDStatusBarStyleError;   /// This style has a red background with a white Helvetica label.
 extern NSString *const JDStatusBarStyleWarning; /// This style has a yellow background with a gray Helvetica label.
 extern NSString *const JDStatusBarStyleSuccess; /// This style has a green background with a white Helvetica label.
